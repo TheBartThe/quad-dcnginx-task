@@ -16,11 +16,11 @@ services:
       - client
 
   server:
-    image: 10.154.0.34:5000/server
+    image: swarm-jenkins:5000/server
     build: ./server
 
   client:
-    image: 10.154.0.34:5000/client
+    image: swarm-jenkins:5000/client
     build: ./client
     
     environment:
