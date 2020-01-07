@@ -13,7 +13,7 @@ services:
         target: /etc/nginx/nginx.conf
     depends_on:
       - server
-        client
+      - client
 
   server:
     image: server
